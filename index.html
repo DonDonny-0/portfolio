@@ -11,49 +11,76 @@
 <body>
   <header>
     <div class="banner">
-      <div class="banner-text container">
+      <div class="banner-text">
         <h1>My Name is <br> Brandon Thomas Murray</h1>
         <p>I am a Web Developer</p>
       </div>
     </div>
   </header>
   <main>
-    <div class="container">
-      <div class="nav">
-        <nav class="navigation">
-          <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#coding-ex">Coding Examples</a></li>
-            <li><a href="#scs-scheme">SCS Scheme</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="nav">
+      <nav class="navigation">
+        <ul class="main-nav">
+          <li id="initials">BTM</li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#coding-ex">Coding Examples</a></li>
+          <li><a href="#scs-scheme">SCS Scheme</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <ul id="socials">
+              <li>facebook</li>
+              <li>instagram</li>
+              <li>linkedin</li>
+              <li>twitter</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div id="about-me">
+    <div class="main-content">
       <div class="container">
-        <h1>About Me</h1>
-      </div>
-    </div>
-    <div id="portfolio">
-      <div class="container">
-        <h1>Portfolio</h1>
-      </div>
-    </div>
-    <div id="coding-ex">
-      <div class="container">
-        <h1>Coding Examples</h1>
-      </div>
-    </div>
-    <div id="scs-scheme">
-      <div class="container">
-        <h1>SCS Scheme</h1>
-      </div>
-    </div>
-    <div id="contact">
-      <div class="container">
-        <h1>Contact</h1>
+        <div id="about-me">
+          <h1>About Me</h1>
+        </div>
+        <div id="portfolio">
+          <h1>Portfolio</h1>
+        </div>
+        <div id="coding-ex">
+          <h1>Coding Examples</h1>
+          <p>Coming soon...</p>
+        </div>
+        <div id="scs-scheme">
+          <h1>SCS Scheme</h1>
+          <h3>Introduction to Scion Coalition Scheme</h3>
+          <p>The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give willing candidates the opportunity to enter the industry as web developers. Under the supervision of senior web developers, scions generally aim to complete training within six to nine months. The course is intensive and therefore the level of learning achieved is extensive in a short space of time.</p>
+          <h3>Treehouse</h3>
+          <p>Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress and see how much they?ve covered in certain areas.</p>
+          <h3>About Netmatters</h3>
+          <p>Established in 2008<br>
+            Norfolk's leading technology company<br>
+            Winner of the Princess Royal Training Award<br>
+            Winner of EDP Skills of Tomorrow Award<br>
+            80+ staff, 2 locations across Norfolk<br>
+            Digital Marketing, Website & Software development & IT Support<br>
+            Broad spectrum of clients, working nationwide<br>
+            Operate to strict company values
+          </p>
+        </div>
+        <div id="contact">
+          <h1>Contact</h1>
+          <form action="index.html" method="POST">
+            <input type="text" id="first-name" name="first_name">
+            <input type="text" id="last-name" name="last_name"><br>
+            <input type="text" id="email" name="email_address"><br>
+            <input type="text" id="subject" name="subject_heading"><br>
+            <textarea></textarea>
+            <button type="submit" id="submit">
+              Submit
+            </button>
+          </form>
+
+        </div>
       </div>
     </div>
   </main>

@@ -1,0 +1,21 @@
+#contact {
+
+  form {
+    margin-left: 10%;
+    text-align: left;
+
+    #first-name, #last-name {
+      width: 42.5%;
+    }
+
+    #email, #subject, textarea {
+      width: 85.55%;
+      margin: 5px 0;
+    }
+
+    #submit {
+      width: 85.5%;
+    }
+
+  }
+}
