@@ -27,6 +27,16 @@
       margin: 0;
     }
 
+    #scroll-down {
+      margin-top: 24%;
+      font-size: 1.5rem;
+      bottom: 10px;
+    }
+
+    i {
+      font-size: 1.5rem;
+    }
+
     @media screen and (min-width: $bkpoint-lg) {
       h1 {
         font-size: 5rem;
@@ -41,6 +51,10 @@
         line-height: 1.75rem;
       }
     }
+  }
+
+  @media screen and (max-width: $bkpoint-lg) {
+    width: 100%;
   }
 
   @media screen and (min-width: $bkpoint-sm) {

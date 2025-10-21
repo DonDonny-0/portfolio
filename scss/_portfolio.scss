@@ -1,0 +1,28 @@
+#portfolio {
+
+  .portfolio-grid {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content:space-between;
+
+    div {
+      background-color: blue;
+      color: red;
+      height: auto; width: auto;
+      border: 1px solid black;
+      margin: 0 auto;
+
+      img {
+        width: 200px; height: 125px;
+      }
+
+      #project3 {
+        width: 200px; height: 125px;
+        background-color: #fff;
+        p {margin-top: 25%;}
+      }
+    }
+  }
+}
