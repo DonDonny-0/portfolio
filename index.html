@@ -27,7 +27,7 @@
     <div class="nav">
       <nav class="navigation">
         <ul class="main-nav">
-          <li id="initials">BTM</li>
+          <span id="initials">BTM</span>
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#coding-ex">Coding Examples</a></li>
@@ -35,10 +35,9 @@
           <li><a href="#contact">Contact</a></li>
           <li>
             <ul id="socials">
-              <li>facebook</li>
-              <li>instagram</li>
-              <li>linkedin</li>
-              <li>twitter</li>
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
             </ul>
           </li>
         </ul>
@@ -75,10 +74,10 @@
           <h1>Coding Examples</h1>
           <p>Coming soon...</p>
         </div>
-        <h1 style="text-align: center;">SCS Scheme</h1>
         <div id="scs-scheme">
+          <h1 style="text-align: center;">SCS Scheme</h1>
           <div>
-            <h3>Introduction to Scion Coalition Scheme</h3>
+            <h3>Introduction to Scion<br>Coalition Scheme</h3>
             <p>The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give willing candidates the opportunity to enter the industry as web developers.<br>Under the supervision of senior web developers, scions generally aim to complete training within six to nine months.<br>The course is intensive and therefore the level of learning achieved is extensive in a short space of time.</p>
           </div>
         </div>
@@ -101,18 +100,27 @@
           </div>
         </div>
 
-        <div id="contact">
-          <form action="index.html" method="POST">
-            <h1>Contact</h1>
-            <input type="text" id="first-name" name="first_name" placeholder="First Name*">
-            <input type="text" id="last-name" name="last_name" placeholder="Last Name*"><br>
-            <input type="text" id="email" name="email_address" placeholder="Email*"><br>
-            <input type="text" id="subject" name="subject_heading" placeholder="Subject*"><br>
-            <textarea placeholder="Message*"></textarea>
-            <button type="submit" id="submit">
-              Submit
-            </button>
-          </form>
+        <div class="contact">
+          <div class="get-in-touch">
+            <h1>Get in Touch</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, sint? A nesciunt molestias similique repellat consectetur perspiciatis voluptatum error suscipit perferendis necessitatibus, quis, ut illo fugit. Reprehenderit tempora assumenda repellat?</p>
+            <p>[my number here]</p>
+            <p>[my email here]</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus porro aut, voluptatum quidem iure, praesentium necessitatibus quis hic perferendis in veniam nulla quia cupiditate aperiam sequi? Harum odit repellat eveniet!</p>
+          </div>
+          <div class="form">
+            <form action="index.html" method="POST">
+              <h1>Contact</h1>
+              <input type="text" id="first-name" name="first_name" placeholder="First Name*">
+              <input type="text" id="last-name" name="last_name" placeholder="Last Name*"><br>
+              <input type="text" id="email" name="email_address" placeholder="Email*"><br>
+              <input type="text" id="subject" name="subject_heading" placeholder="Subject*"><br>
+              <textarea placeholder="Message*"></textarea>
+              <button type="submit" id="submit">
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

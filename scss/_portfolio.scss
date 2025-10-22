@@ -1,14 +1,17 @@
 @import 'utilities/mixins';
 
 #portfolio {
+  border-top: 5px solid aqua;
+  padding-top: 100px;
 
   .portfolio-grid {
-    @include box-design;
-
+    @include box-design(aquamarine);
+    transition: background-color 0.5s, transform 0.5s;
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
     grid-gap: 20px;
+    margin-bottom: 10%;
 
     img {
       width: 398px; height: 250px;
@@ -16,10 +19,24 @@
       border-radius: 10px 10px 0 0;
     }
 
-    #project3 {
-      width: 200px; height: 125px;
-      background-color: #fff;
-      p {margin-top: 25%;}
+    .project1, .project2 {
+      
+      @media screen and (max-width: $bkpoint-md) {
+        margin: 0 auto 20%;
+        width: 90%;
+      }
+    }
+
+    .project1:hover, .project2:hover {
+      transform: translate(0, -5px);
+
+      img {
+        border: 2px solid aquamarine;
+        border-radius: 10px;
+      }
+    }
+
+    .project1:hover {
     }
 
     @media screen and (min-width: $bkpoint-md) {

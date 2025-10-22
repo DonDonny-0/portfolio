@@ -1,31 +1,74 @@
-#contact {
+.contact {
+  display: flex;
+  flex-direction: row;
   margin-bottom: 10%;
+  justify-content: space-between;
+  border-top: 5px solid aqua;
+  padding-top: 100px;
 
-  form {
-    box-shadow: 0 3px 35px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    margin: 0 auto;
-    border: 1px solid rgba(0,0,0,0.2);
-    padding: 5% 0;
+  .get-in-touch {
+    width: 100%;
+    p {width: 90%;}
+
+    @media screen and (max-width: $bkpoint-md) {
+      margin-bottom: 10%;
+    }
+  }
+
+  .form {
+    width: 100%;
+
+    form {
+      box-shadow: 0 3px 35px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      margin: 0 auto;
+      border: 1px solid rgba(0,0,0,0.2);
+      padding: 5% 0;
+      text-align: center;
+
+      .labels {
+        display: inline-block;
+        text-align: left;
+      }
+
+      #first-name, #last-name {
+        width: 42.5%;
+        font-size: 1.5rem;
+        border-radius: 3px;
+        padding: 1%;
+      }
+
+      #email, #subject, textarea {
+        width: 85.55%;
+        margin: 5px 0;
+        font-size: 1.5rem;
+        border-radius: 3px;
+        padding: 1%;
+      }
+
+      #submit {
+        width: 85.5%;
+        font-size: 1.5rem;
+      }
+
+      @media screen and (max-width: $bkpoint-md) {
+        #first-name,
+        #last-name,
+        #email,
+        #subject,
+        textarea,
+        #submit {
+          padding: 5%;
+          width: 90%;
+          margin: 2.5% 0;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $bkpoint-md) {
     text-align: center;
-
-    .labels {
-      display: inline-block;
-      text-align: left;
-    }
-
-    #first-name, #last-name {
-      width: 42.5%;
-    }
-
-    #email, #subject, textarea {
-      width: 85.55%;
-      margin: 5px 0;
-    }
-
-    #submit {
-      width: 85.5%;
-    }
-
+    flex-direction: column;
+    p {width: 100%; margin: 10px auto;}
   }
 }

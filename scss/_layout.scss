@@ -19,10 +19,11 @@ body {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 0 5%;
 
-  @media screen and (min-width: $bkpoint-md) {
-    margin: 0 5%;
+  @media screen and (min-width: $bkpoint-lg) {
+    margin-left: 20%;
+    margin-right: 5%;
   }
 }
 

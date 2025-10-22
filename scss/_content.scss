@@ -4,12 +4,14 @@
   
   #about-me {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 10%;
   }
 
   #coding-ex {
+    border-top: 5px solid aqua;
+    padding-top: 100px;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 10%;;
   }
 
   .scs-treehouse>div>h3+p {
@@ -17,27 +19,26 @@
   }
 
   #scs-scheme {
-    @include box-design;
+    @include box-design(aquamarine);
+    border-top: 5px solid aqua;
+    padding-top: 100px;
     //padding: 0 -30px;
     width: 100%;
     text-align: center;
+    p {margin: 0 10%}
+    //h3 {margin-bottom: -20px;}
   }
 
   .scs-treehouse {
-    @include box-design;
+    @include box-design(aquamarine);
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
+    margin-bottom: 10%;
 
-    #scs-scheme, #treehouse, #netmatters {
-      // text-align: center;
-      // border: 1px solid rgba(0,0,0,0.2);
-      // margin: 5% auto 0;
+    #treehouse, #netmatters {
       padding: 5% 5%;
-      // border-radius: 10px;
-      // font-size: 0.9rem;
-      // box-shadow: 0 3px 35px rgba(0,0,0,0.1);
     }
 
     @media screen and (min-width: $bkpoint-md) {
