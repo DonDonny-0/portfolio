@@ -1,8 +1,18 @@
 #contact {
+  margin-bottom: 10%;
 
   form {
+    box-shadow: 0 3px 35px rgba(0,0,0,0.1);
+    border-radius: 10px;
     margin: 0 auto;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 5% 0;
     text-align: center;
+
+    .labels {
+      display: inline-block;
+      text-align: left;
+    }
 
     #first-name, #last-name {
       width: 42.5%;

@@ -1,6 +1,48 @@
-.main-content {
+@import 'utilities/mixins';
 
-  #scs-scheme>p {
-    margin: 0 10% 5%;
+.main-content {
+  
+  #about-me {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  #coding-ex {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .scs-treehouse>div>h3+p {
+    margin: 5% 10% 0;
+  }
+
+  #scs-scheme {
+    @include box-design;
+    //padding: 0 -30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .scs-treehouse {
+    @include box-design;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+
+    #scs-scheme, #treehouse, #netmatters {
+      // text-align: center;
+      // border: 1px solid rgba(0,0,0,0.2);
+      // margin: 5% auto 0;
+      padding: 5% 5%;
+      // border-radius: 10px;
+      // font-size: 0.9rem;
+      // box-shadow: 0 3px 35px rgba(0,0,0,0.1);
+    }
+
+    @media screen and (min-width: $bkpoint-md) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
   }
 }

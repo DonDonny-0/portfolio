@@ -1,28 +1,29 @@
+@import 'utilities/mixins';
+
 #portfolio {
 
   .portfolio-grid {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    width: 70%;
-    justify-content:space-between;
+    @include box-design;
 
-    div {
-      background-color: blue;
-      color: red;
-      height: auto; width: auto;
-      border: 1px solid black;
-      margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    grid-gap: 20px;
 
-      img {
-        width: 200px; height: 125px;
-      }
+    img {
+      width: 398px; height: 250px;
+      margin-top: -70px;
+      border-radius: 10px 10px 0 0;
+    }
 
-      #project3 {
-        width: 200px; height: 125px;
-        background-color: #fff;
-        p {margin-top: 25%;}
-      }
+    #project3 {
+      width: 200px; height: 125px;
+      background-color: #fff;
+      p {margin-top: 25%;}
+    }
+
+    @media screen and (min-width: $bkpoint-md) {
+      grid-template-columns: 1fr 1fr;
     }
   }
 }

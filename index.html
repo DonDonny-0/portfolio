@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src="https://kit.fontawesome.com/03a8564f56.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <title>Brandon Thomas Murray</title>
   <meta name="ROBOTS" content="NOINDEX,NOFOLLOW">
   <link rel="stylesheet" href="css/styles.css">
@@ -48,65 +51,76 @@
           <p>I am a highly motivated and technically capable Computer science graduate, who is committed to continuous learning and hands-on experience. My interests lie in web development and design, machine learning and AI. </p>
           <p>I thrive in structured environments where I can engage deeply with technical challenges and collaborate on meaningful projects.</p>
         </div>
+      </div>
+      <div class="container">
         <div id="portfolio">
-          <h1>Portfolio</h1>
+          <h1 style="text-align: center; margin-bottom: 100px">Portfolio</h1>
           <div class="portfolio-grid">
             <div class="project1">
               <img src="img/project1.png" alt="project 1 Image" />
               <h4>Project 1</h4>
+              <a href="#">View Project</a>
             </div>
             <div class="project2">
               <img src="img/project2.png" alt="Project 2 Image">
               <h4>Project 2</h4>
+              <p>href="#">View Project</p>
             </div>
-            <div class="project-soon">
-              <div id="project3">
-                <p>More Projects...</p>
-              </div>
+            <!-- <div class="project-soon">
               <h4>Coming Soon!</h4>
-            </div>
+            </div> -->
           </div>
         </div>
         <div id="coding-ex">
           <h1>Coding Examples</h1>
           <p>Coming soon...</p>
         </div>
+        <h1 style="text-align: center;">SCS Scheme</h1>
         <div id="scs-scheme">
-          <h1>SCS Scheme</h1>
-          <h3>Introduction to Scion Coalition Scheme</h3>
-          <p>The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give willing candidates the opportunity to enter the industry as web developers. Under the supervision of senior web developers, scions generally aim to complete training within six to nine months. The course is intensive and therefore the level of learning achieved is extensive in a short space of time.</p>
-          <h3>Treehouse</h3>
-          <p>Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress and see how much they?ve covered in certain areas.</p>
-          <h3>About Netmatters</h3>
-          <p>Established in 2008<br>
-            Norfolk's leading technology company<br>
-            Winner of the Princess Royal Training Award<br>
-            Winner of EDP Skills of Tomorrow Award<br>
-            80+ staff, 2 locations across Norfolk<br>
-            Digital Marketing, Website & Software development & IT Support<br>
-            Broad spectrum of clients, working nationwide<br>
-            Operate to strict company values
-          </p>
+          <div>
+            <h3>Introduction to Scion Coalition Scheme</h3>
+            <p>The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give willing candidates the opportunity to enter the industry as web developers.<br>Under the supervision of senior web developers, scions generally aim to complete training within six to nine months.<br>The course is intensive and therefore the level of learning achieved is extensive in a short space of time.</p>
+          </div>
         </div>
+        <div class="scs-treehouse">
+          <div id="netmatters">
+            <h3>About Netmatters</h3>
+            <p>Established in 2008<br>
+              Norfolk's leading technology company<br>
+              Winner of the Princess Royal Training Award<br>
+              Winner of EDP Skills of Tomorrow Award<br>
+              80+ staff, 2 locations across Norfolk<br>
+              Digital Marketing, Website & Software development & IT Support<br>
+              Broad spectrum of clients, working nationwide<br>
+              Operate to strict company values
+            </p>
+          </div>
+          <div id="treehouse">
+            <h3>Treehouse</h3>
+            <p>Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more.<br> By completing courses users can earn points, allowing them to track their progress and see how much they?ve covered in certain areas.</p>
+          </div>
+        </div>
+
         <div id="contact">
-          <h1>Contact</h1>
           <form action="index.html" method="POST">
-            <input type="text" id="first-name" name="first_name">
-            <input type="text" id="last-name" name="last_name"><br>
-            <input type="text" id="email" name="email_address"><br>
-            <input type="text" id="subject" name="subject_heading"><br>
-            <textarea></textarea>
+            <h1>Contact</h1>
+            <input type="text" id="first-name" name="first_name" placeholder="First Name*">
+            <input type="text" id="last-name" name="last_name" placeholder="Last Name*"><br>
+            <input type="text" id="email" name="email_address" placeholder="Email*"><br>
+            <input type="text" id="subject" name="subject_heading" placeholder="Subject*"><br>
+            <textarea placeholder="Message*"></textarea>
             <button type="submit" id="submit">
               Submit
             </button>
           </form>
-
         </div>
       </div>
     </div>
   </main>
   <footer>
-
+    <div class="footer-main">
+      footer
+    </div>
   </footer>
 </body>
 </html>

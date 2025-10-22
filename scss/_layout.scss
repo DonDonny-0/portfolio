@@ -11,19 +11,18 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  text-align: center;
 }
 
 * {
   box-sizing: border-box;
-  font-family: Poppins, sans-serif;
+  font-family: Raleway, sans-serif;
 }
 
 .container {
-  margin-left: 15%;
+  margin: 0 auto;
 
-  @media screen and (max-width: $bkpoint-lg) {
-    margin: 0;
+  @media screen and (min-width: $bkpoint-md) {
+    margin: 0 5%;
   }
 }
 
