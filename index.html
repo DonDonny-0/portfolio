@@ -16,32 +16,32 @@
   <header>
     <div class="banner">
       <div class="banner-text">
-        <h1>My Name is <br> Brandon Thomas Murray</h1>
-        <p>I am a Web Developer</p>
-        <p id="scroll-down">scroll down</p>
-        <i class="fa-solid fa-angle-down"></i>
+        <div class="intro">
+          <h1>My Name is <br> Brandon Thomas Murray</h1>
+          <p>I am a Web Developer</p>
+        </div>
+        <div class="scroll-text">
+          <h4 id="scroll-down">scroll down</h4>
+          <p id="arrow"><i class="fa-solid fa-angle-down"></i></p>
+        </div>
       </div>
     </div>
   </header>
   <main>
     <div class="nav">
-      <nav class="navigation">
-        <ul class="main-nav">
-          <span id="initials">BTM</span>
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#coding-ex">Coding Examples</a></li>
-          <li><a href="#scs-scheme">SCS Scheme</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <ul id="socials">
-              <li><i class="fa-brands fa-facebook"></i></li>
-              <li><i class="fa-brands fa-instagram"></i></li>
-              <li><i class="fa-brands fa-linkedin"></i></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+      <div class="main-nav">
+        <div id="initials">BTM</div>
+        <span class="nav-item"><a href="#about-me">About Me</a></span>
+        <span class="nav-item"><a href="#portfolio">Portfolio</a></span>
+        <span class="nav-item"><a href="#coding-ex">Coding Examples</a></span>
+        <span class="nav-item"><a href="#scs-scheme">SCS Scheme</a></span>
+        <span class="nav-item"><a href="#contact">Contact</a></span>
+        <div id="socials">
+          <a href="#"><span><i class="fa-brands fa-facebook"></i></span></a>
+          <a href="#"><span><i class="fa-brands fa-instagram"></i></span></a>
+          <a href="#"><span><i class="fa-brands fa-linkedin"></i></span></a>
+        </div>
+      </div>
     </div>
     <div class="main-content">
       <div class="container">
@@ -50,24 +50,21 @@
           <p>I am a highly motivated and technically capable Computer science graduate, who is committed to continuous learning and hands-on experience. My interests lie in web development and design, machine learning and AI. </p>
           <p>I thrive in structured environments where I can engage deeply with technical challenges and collaborate on meaningful projects.</p>
         </div>
-      </div>
-      <div class="container">
         <div id="portfolio">
           <h1 style="text-align: center; margin-bottom: 100px">Portfolio</h1>
           <div class="portfolio-grid">
             <div class="project1">
               <img src="img/project1.png" alt="project 1 Image" />
-              <h4>Project 1</h4>
-              <a href="#">View Project</a>
+              <h4>Netmatters Frontpage Replica</h4>
+              <p>A replication of the netmatters landing page, a great opportunity to learn and practice HTML and SASS. </p>
+              <a target="_blank" href="https://github.com/DonDonny-0/netmatters-homepage"><button class="btn">View Project<i class="fa-brands fa-github"></i></button></a>
             </div>
             <div class="project2">
               <img src="img/project2.png" alt="Project 2 Image">
-              <h4>Project 2</h4>
-              <p>href="#">View Project</p>
+              <h4>Anime ML Recommender System</h4>
+              <p>A system which recommends anime to the user based on their favourite shows, built using python.</p>
+              <a target="_blank" href="https://github.com/DonDonny-0/anime_recommender_system"><button class="btn">View Project<i class="fa-brands fa-github"></i></button></a>
             </div>
-            <!-- <div class="project-soon">
-              <h4>Coming Soon!</h4>
-            </div> -->
           </div>
         </div>
         <div id="coding-ex">
@@ -99,7 +96,6 @@
             <p>Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more.<br> By completing courses users can earn points, allowing them to track their progress and see how much they?ve covered in certain areas.</p>
           </div>
         </div>
-
         <div class="contact">
           <div class="get-in-touch">
             <h1>Get in Touch</h1>
@@ -127,7 +123,12 @@
   </main>
   <footer>
     <div class="footer-main">
-      footer
+      <p>&copy; 2025 Brandon Thomas Murray</p>
+      <p>
+        <a href="#"><span><i class="fa-brands fa-facebook"></i></span></a>
+        <a href="#"><span><i class="fa-brands fa-instagram"></i></span></a>
+        <a href="#"><span><i class="fa-brands fa-linkedin"></i></span></a>
+      </p>
     </div>
   </footer>
 </body>
