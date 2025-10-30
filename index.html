@@ -11,11 +11,11 @@
   <title>Brandon Thomas Murray</title>
   <meta name="ROBOTS" content="NOINDEX,NOFOLLOW">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="js/animsition/animsition.min.css">
 </head>
 <body>
-  <header>
+  <header >
     <div class="banner">
-      <i id="bars" class="fa-solid fa-bars"></i>
       <div class="banner-text">
         <div class="intro">
           <h1>My Name is <br> Brandon Thomas Murray</h1>
@@ -29,20 +29,26 @@
     </div>
   </header>
   <main>
-    <div class="nav">
-      <div class="main-nav">
-        <div id="initials">BTM</div>
-        <a class="nav-item" href="#about-me"><span>About Me</span></a>
-        <a class="nav-item" href="#portfolio"><span>Portfolio</span></a>
-        <a class="nav-item" href="#coding-ex"><span>Coding Examples</span></a>
-        <a class="nav-item" href="#scs-scheme"><span>SCS Scheme</span></a>
-        <a class="nav-item" href="#contact"><span>Contact</span></a>
-        <div id="socials">
-          <a target="_blank" href="https://github.com/DonDonny-0"><span><i class="fa-brands fa-github"></i></span></a>
-          <a target="_blank" href="https://www.linkedin.com/in/brandon-thomas-murray-909082373"><span><i class="fa-brands fa-linkedin"></i></span></a>
-        </div>
-      </div>
+  <div class="menu-btn">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <div class="side-bar">
+    <div class="close-btn">
+      <i class="fas fa-times"></i>
     </div>
+    <div class="menu">
+      <div class="item"><a href="#"><i class="fas fa-desktop"></i>About Me</a></div>
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-table"></i>Portfolio</a>
+      </div>
+      <div class="item"><a href="#"><i class="fas fa-th"></i>Examples</a></div>
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-cogs"></i>SCS Scheme</a>
+      </div>
+      <div class="item"><a href="#"><i class="fas fa-info-circle"></i>Contact Me</a></div>
+    </div>
+  </div>
     <div class="main-content">
       <div class="container">
         <div id="about-me">
@@ -120,6 +126,29 @@
         </div>
       </div>
     </div>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/animsition/jquery.animsition.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        // jquery for toggle sub menu
+        $('.sub-btn').click(function() {
+          $(this).next('.sub-menu').slideToggle();
+          $(this).find('.dropdown').toggleClass('rotate');
+        })
+
+        // jquery for expand and collapse the sidebar
+        $('.menu-btn').click(function() {
+          $('.side-bar').addClass('active');
+          $('.menu-btn').css('display', 'none');
+        })
+
+        $('.close-btn').click(function() {
+          $('.side-bar').removeClass('active');
+          $('.menu-btn').css('display', 'block');
+        })
+      })
+    </script>
   </main>
   <footer>
     <div class="footer-main">
