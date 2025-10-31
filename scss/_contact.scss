@@ -15,32 +15,30 @@
     }
   }
 
-  .form {
+  .contact {
     width: 100%;
 
     form {
+      display: flex;
+      flex-direction: column;
       box-shadow: 0 3px 35px rgba(0,0,0,0.1);
       border-radius: 10px;
-      margin: 0 auto;
       border: 1px solid rgba(0,0,0,0.2);
       padding: 5% 0;
-      text-align: center;
+      text-align: left;
+      align-items: center;
 
-      .labels {
-        display: inline-block;
-        text-align: left;
+      .input-control {
+        width: 90%;
       }
 
-      #first-name, #last-name {
-        width: 42.5%;
-        font-size: 1.5rem;
-        border-radius: 3px;
-        padding: 1%;
-      }
-
-      #email, #subject, textarea {
-        width: 85.55%;
-        margin: 5px 0;
+      #first-name,
+      #last-name,
+      #email,
+      #subject,
+      textarea {
+        width: 100%;
+        margin-bottom: 10px;
         font-size: 1.5rem;
         border-radius: 3px;
         padding: 1%;
@@ -51,16 +49,30 @@
         font-size: 1.5rem;
       }
 
+      .input-control.success input {
+          border-color: #09c372;
+      }
+
+      .input-control.error input {
+          border-color: #ff3860;
+      }
+
+      .input-control .error {
+        color: #ff3860;
+        font-size: 9px;
+        height: 13px;
+      }
+
       @media screen and (max-width: $bkpoint-md) {
         #first-name,
         #last-name,
         #email,
         #subject,
-        textarea,
-        #submit {
+        textarea
+        {
           padding: 5%;
-          width: 90%;
-          margin: 2.5% 0;
+          width: 100%;
+          margin-bottom: 2.5%
         }
       }
     }

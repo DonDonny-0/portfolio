@@ -12,6 +12,7 @@
   <meta name="ROBOTS" content="NOINDEX,NOFOLLOW">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="js/animsition/animsition.min.css">
+  <script defer src="js/main.js"></script>
 </head>
 <body>
   <header >
@@ -36,6 +37,9 @@
   <div class="side-bar">
     <div class="close-btn">
       <i class="fas fa-times"></i>
+    </div>
+    <div class="initials">
+      BTM
     </div>
     <div class="menu">
       <div class="item"><a href="#"><i class="fas fa-desktop"></i>About Me</a></div>
@@ -110,45 +114,62 @@
             <p><strong>Email:</strong> brand.t2004@icloud.com</p>
             <p><strong>Contact Number:</strong> 07375 042777</p>
           </div>
-          <div class="form">
-            <form action="index.html" method="POST">
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="contact">
+            <form id="form" action="/">
               <h1>Contact</h1>
-              <input type="text" id="first-name" name="first_name" placeholder="First Name*">
-              <input type="text" id="last-name" name="last_name" placeholder="Last Name*"><br>
-              <input type="text" id="email" name="email_address" placeholder="Email*"><br>
-              <input type="text" id="subject" name="subject_heading" placeholder="Subject*"><br>
-              <textarea placeholder="Message*"></textarea>
-              <button type="submit" id="submit">
-                Submit
-              </button>
+              <div class="input-control">
+                <label for="first-name">First Name</label><br>
+                <input type="text" id="first-name" name="first-name">
+                <div class="error"></div>
+              </div>
+              <div class="input-control">
+                <label for="last-name">Last Name</label><br>
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name*">
+                <div class="error"></div>
+              </div>
+              <div class="input-control">
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" placeholder="Email*"><br>
+                <div class="error"></div>
+              </div>
+              <div class="input-control">
+                <label for="subject">Subject</label><br>
+                <input type="text" id="subject" name="subject" placeholder="Subject*"><br>
+                <div class="error"></div>
+              </div>
+              <div class="input-control">
+                <label for="message">Message</label><br>
+                <textarea id="message" placeholder="Message*"></textarea>
+                <div class="error"></div>
+              </div>
+              <button type="submit" id="submit">Submit</button>
             </form>
           </div>
+
+
+
+
+
+
+
+
         </div>
       </div>
     </div>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/animsition/jquery.animsition.min.js"></script>
-    <script src="js/main.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        // jquery for toggle sub menu
-        $('.sub-btn').click(function() {
-          $(this).next('.sub-menu').slideToggle();
-          $(this).find('.dropdown').toggleClass('rotate');
-        })
-
-        // jquery for expand and collapse the sidebar
-        $('.menu-btn').click(function() {
-          $('.side-bar').addClass('active');
-          $('.menu-btn').css('display', 'none');
-        })
-
-        $('.close-btn').click(function() {
-          $('.side-bar').removeClass('active');
-          $('.menu-btn').css('display', 'block');
-        })
-      })
-    </script>
   </main>
   <footer>
     <div class="footer-main">

@@ -9,6 +9,7 @@
   overflow-y: auto;
   transition: 0.3s ease;
   transition-property: left;
+  z-index: 1;
 
   @media screen and (max-width: $bkpoint-lg) {
     left: -100%;
@@ -17,6 +18,19 @@
 
   @media screen and (max-width: $bkpoint-sm) {
     width: 100%;
+  }
+}
+
+.side-bar .initials {
+  color: white;
+  font-size: 4rem;
+  margin-top: 50px;
+  margin-left: 25px;
+  margin-bottom: -50px;
+
+  @media screen and (max-width: $bkpoint-sm) {
+    text-align: center;
+    margin-right: 20px;
   }
 }
 
@@ -32,6 +46,18 @@
 .side-bar .menu .item {
   position: relative;
   cursor: pointer;
+  margin-left: 5px;
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.5);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @media screen and (max-width: $bkpoint-sm) {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .side-bar .menu .item a {
@@ -41,6 +67,11 @@
   display: block;
   padding: 5px 30px;
   line-height: 60px;
+  
+  @media screen and (max-width: $bkpoint-sm) {
+    text-align: center;
+    padding: 10px 30px;
+  }
 }
 
 .side-bar .menu .item a:hover {

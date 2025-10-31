@@ -1,5 +1,5 @@
 footer {
-  background-color: aquamarine;
+  background-color: rgba(9, 2, 12, 0.8);;
   width: 100%;
   height: 10vh;
   text-align: center;
@@ -9,6 +9,7 @@ footer {
 
     #credits {
       padding: 1% 0 0 15%;
+      color: white;
       
       @media screen and (max-width: $bkpoint-lg) {
         padding-left: 0;
@@ -23,7 +24,7 @@ footer {
       padding-left: 15%;
       margin-top: 0;
       font-size: 1.5rem;
-      a {color: black;}
+      a {color: white;}
 
       @media screen and (max-width: $bkpoint-lg) {
         padding-left: 0;
