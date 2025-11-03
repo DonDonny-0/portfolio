@@ -19,6 +19,14 @@ $(document).ready(function() {
 
 })
 
+$('.scs-slides').slick({
+  centerMode: true,
+  centerPadding: '100px',
+  arrows: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+});
+
 const form = document.getElementById('form');
 const firstName = document.getElementById('first-name');
 const lastName = document.getElementById('last-name');
