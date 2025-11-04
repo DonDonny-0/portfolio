@@ -76,6 +76,11 @@
         line-height: 1.75rem;
       }
     }
+
+    @media screen and (min-width: $bkpoint-lg) {
+      margin-left: 325px;
+      margin-right: 100px;
+    }
   }
 
 

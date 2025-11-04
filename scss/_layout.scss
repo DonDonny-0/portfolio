@@ -25,6 +25,11 @@ body {
     margin-left: 25%;
     margin-right: 5%;
   }
+
+  @media screen and (min-width: $bkpoint-xl) {
+    margin-left: 325px;
+    margin-right: 100px;
+  }
 }
 
 .main-content {
