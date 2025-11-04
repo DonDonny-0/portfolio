@@ -10,7 +10,7 @@ $(document).ready(function() {
   $('.menu-btn').click(function() {
     $('.side-bar').addClass('active');
     $('.menu-btn').css('display', 'none');
-  })
+  });
 
   $('.close-btn').click(function() {
     $('.side-bar').removeClass('active');
@@ -19,12 +19,20 @@ $(document).ready(function() {
 
 })
 
+$(document).ready(function() {
+  $('.intro').animsition({
+    inClass: 'fade-in-down-sm',
+    outDuration: 1500
+  });
+});
+
+
 $('.scs-slides').slick({
-  centerMode: true,
   centerPadding: '100px',
-  arrows: true,
+  dots: true,
   slidesToShow: 1,
   slidesToScroll: 1,
+  infinite: false
 });
 
 const form = document.getElementById('form');
