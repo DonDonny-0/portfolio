@@ -35,6 +35,10 @@ $('.scs-slides').slick({
   infinite: false
 });
 
+window.addEventListener('scroll', () => {
+  document.querySelector('.fa-bars').classList.toggle('scrolled', window.scrollY > 900);
+});
+
 const form = document.getElementById('form');
 const firstName = document.getElementById('first-name');
 const lastName = document.getElementById('last-name');

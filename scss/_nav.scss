@@ -109,7 +109,7 @@
 .menu-btn {
   display: block;
   position: fixed;
-  color: linear-gradient(0deg, white 20%, black 80%);
+  color: white;
   font-size: 2rem;
   margin: 25px;
   cursor: pointer;
@@ -117,4 +117,8 @@
   @media screen and (min-width: $bkpoint-lg) {
     display: none;
   }
+}
+
+.scrolled {
+  color: black;
 }
